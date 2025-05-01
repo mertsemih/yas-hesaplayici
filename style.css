@@ -1,0 +1,137 @@
+body {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Arka plan animasyonları */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1a1a1a, #2c3e50);
+    z-index: -1;
+}
+
+/* Yağan emojiler animasyonu */
+@keyframes falling {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+.emoji {
+    position: fixed;
+    font-size: 2rem;
+    z-index: -1;
+    animation: falling 10s linear infinite;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    will-change: transform;
+}
+
+.emoji:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover::after {
+    transform: rotate(45deg) translate(50%, 50%);
+}
+
+#result {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Mobil uyumluluk için medya sorguları */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    #result {
+        font-size: 1.1rem;
+    }
+    
+    .emoji {
+        font-size: 1.5rem;
+    }
+}
+
+/* Erişilebilirlik için odaklanma stilleri */
+input:focus, button:focus {
+    outline: 3px solid #3498db;
+    outline-offset: 2px;
+} 
