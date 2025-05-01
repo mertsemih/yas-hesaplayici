@@ -55,5 +55,5 @@ Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICEN
 - Mert Semih Sarıyerli - [@mertsemih](https://github.com/mertsemih) - semihmertsariyerli.06@gmail.com
 - Ramazan Kanat - [@ramazankanat226](https://github.com/ramazankanat226) - ramazankanat226@gmail.com
 - Ömer Faruk Aşkın - [@askinomer](https://github.com/askinomer) - omerfaruk_2020@hotmail.com
-- Ertunç Yontuç - [[@ertuncyntc](https://github.com/ertuncyntc) - ertuncyontuc@gmail.com
-- Ali Akpınar -[[@aaliakpinar](https://github.com/aaliakpinar) - akpinarali261@gmail.com
+- Ertunç Yontuç - [@ertuncyntc](https://github.com/ertuncyntc) - ertuncyontuc@gmail.com
+- Ali Akpınar -[@aaliakpinar](https://github.com/aaliakpinar) - akpinarali261@gmail.com
